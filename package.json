@@ -1,0 +1,38 @@
+{
+  "name": "file-converter-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/copy-vendor-assets.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/copy-vendor-assets.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@jsquash/oxipng": "^2.3.0",
+    "@vercel/analytics": "^2.0.1",
+    "fflate": "^0.8.3",
+    "jspdf": "^4.2.1",
+    "next": "16.3.4",
+    "pdfjs-dist": "^6.3.289",
+    "qpdf-run": "^0.2.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^5.0.0"
+  }
+}
